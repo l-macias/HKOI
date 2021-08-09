@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Holy Koi Tattoo</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+  <div class="header__contenedor">
+    <header class="header">
+      <!--Menu de Navegación-->
+      <div>
+        <a href="./index.html"><img class="header__logo" src="./images/holy-logo.jpg" alt="Logo Holy Koi"
+            title="Logo Holy Koi"></a>
+      </div>
+      <div>
+        <h1 class="animate__animated animate__flipInX header__titulo">HOLY KOI TATTOO</h1>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li> <a href="./index.html">Inicio</a></li>
+          <li> <a href="./estudio.html">Estudio</a></li>
+          <li> <a href="./artistas.html">Artistas</a></li>
+          <li> <a href="./servicios.html">Servicios</a></li>
+          <li class="active"> <a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <main>
+    <!--Imagen de Fondo Cortada-->
+    <div class="imagenfondo"></div>
+    <!--Sección Centro Main-->
+    <section class="main__centro">
+      <div>
+        <h2>CONTACTA CON HOLY KOI TATTOO</h2>
+      </div>
+      <!--Formulario-->
+      <section class="formulario">
+        <div class="reservas">
+          <p>Desde el siguiente formulario podrás realizar tu consulta. <br>
+            Nosotros chequearemos la información recibida, y nos
+            comunicaremos telefónicamente para cerrar la operación.</p>
+        </div>
+        <!--Comienzo del formulario-->
+        <form action="">
+          <fieldset>
+            <div>
+              <legend>Datos Personales</legend>
+            </div>
+            <br>
+            <div>
+              <!--Datos personales-->
+              <label for="nombreYApellido">Nombre y Apellido:</label>
+              <input type="text" id="nombreYApellido" name="nombreYApellido">
+            </div>
+            <div>
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div>
+              <label for="telefono">Teléfono*:</label>
+              <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <br>
+          </fieldset>
+          <fieldset>
+            <!--Parte 2 de formulario-->
+            <div>
+              <legend>Datos de Servicio</legend>
+              <br>
+              <!--Botones de Radio-->
+              <div>
+                <label for="tattoo">Quiero consultar sobre Tattoo</label>
+                <input type="radio" id="tattoo" name="servicio" value="basica">
+              </div>
+              <div>
+                <label for="piercing">Quiero consultar sobre Piercing</label>
+                <input type="radio" id="piercing" name="servicio" value="premium">
+              </div>
+              <br>
+              <!--Desplegable-->
+              <div>
+                <label for="talle">Comunicación preferida:</label>
+                <Select name="comunicacion" id="comunicacion">
+                  <option value="llamada">Llamada telefónica</option>
+                  <option value="whatsapp">Whatsapp</option>
+                  <option value="email">Correo Electrónico</option>
+                </Select>
+              </div>
+              <br>
+              <br>
+              <!--Checkbox-->
+              <div class="acepto">
+                <label for="acepto">Acepto que me contacten usando los datos que he proporcionado.</label>
+                <input type="checkbox" id="acepto" name="acepto" value="yes" checked required>
+              </div>
+              <!--Botones de Borrar y Enviar-->
+              <div><br>
+                <input type="reset" value="Borrar Datos">
+                <input type="submit" value="Enviar datos">
+              </div>
+          </fieldset>
+        </form>
+      </section>
+  </main>
+  <!--Comienzo de Footer-->
+  <footer>
+    <div class="footer__centro">
+      <p class="footer__centro__texto1">Visítanos en Vecindario, en calle Sin Nombre 1234, donde nuestro equipo te
+        recibirá de la mejor manera</p>
+      <p class="footer__centro__texto2">También puedes comunicarte con nosotros vía whatsapp o telefónicamente al
+        0123-4567890</p>
+    </div>
+    <!--Texto final del Footer-->
+    <div>
+      <p class="footer__final">Holy Koi Tattoo | Islas Canarias, España | 2021 | Powered by Lucas Macias
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
