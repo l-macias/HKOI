@@ -26,8 +26,8 @@ header {
 }
 .header__logo {
   position: relative;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   float: left;
 }
 /*Nav*/
