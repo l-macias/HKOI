@@ -45,7 +45,9 @@ header {
 .nav__estilo a:hover{
   color: rgb(140, 175, 13) !important;
 }
-
+.nav-link.active {
+  color:rgb(140, 175, 13) !important;
+}
 /*
 .menu {
   list-style:none;
