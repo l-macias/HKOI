@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios | Holy Koi Tattoo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,67 +17,82 @@
 
 <body>
   <div class="header__contenedor">
-    <header class="header">
-      <!--Menu de Navegación-->
-      <div>
-        <a href="./index.html"><img class="header__logo" src="./images/holy-logo.jpg" alt="Logo Holy Koi"
-            title="Logo Holy Koi"></a>
-      </div>
-      <div>
-        <h1 class="animate__animated animate__flipInX header__titulo">HOLY KOI TATTOO</h1>
-      </div>
-      <nav class="menu">
-        <ul>
-          <li> <a href="./index.html">Inicio</a></li>
-          <li> <a href="./estudio.html">Estudio</a></li>
-          <li> <a href="./artistas.html">Artistas</a></li>
-          <li class="active"> <a href="./servicios.html">Servicios</a></li>
-          <li> <a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark nav__estilo">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img class="header__logo" src="./images/holy-logo.jpg" alt=""></a>
+          <h1 class="header__titulo">HOLY KOI TATTOO</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-2 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./estudio.html">Estudio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./artistas.html">Artistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-  </div>
-  <main>
-    <!--Imagen de Fondo Cortada-->
-    <div class="imagenfondo"></div>
-    <!--Sección Centro Main-->
-    <section class="main__centro">
-      <div>
-        <h2>NUESTROS SERVICIOS</h2>
+    <main>
+      <!--Imagen de Fondo Cortada-->
+      <div class="imagenfondo"></div>
+      <!--Sección Centro Main-->
+      <section class="main__centro">
+        <div>
+          <h2>NUESTROS SERVICIOS</h2>
+        </div>
+        <section class="servicios">
+          <div class="servicio__piercing">
+            <h3>PIERCING</h3>
+            <div class="contenedor__piercing">
+              <a href="./images/piercing-1.jpg" target="_blank"><img src="./images/piercing-1.jpg" alt="Piercing 1"></a>
+              <a href="./images/piercing-2.jpg" target="_blank"><img src="./images/piercing-2.jpg" alt="Piercing 2"></a>
+              <a href="./images/piercing-3.jpg" target="_blank"><img src="./images/piercing-3.jpg" alt="Piercing 3"></a>
+            </div>
+          </div>
+          <div class="servicio__tattoo">
+            <h3>TATTOO</h3>
+            <div class="contenedor__tattoo">
+              <a href="./images/tattoo-1.jpg" target="_blank"><img src="./images/tattoo-1.jpg" alt="Tattoo 1"></a>
+              <a href="./images/tattoo-2.jpg" target="_blank"><img src="./images/tattoo-2.jpg" alt="Tattoo 2"></a>
+              <a href="./images/tattoo-3.jpg" target="_blank"><img src="./images/tattoo-3.jpg" alt="Tattoo 3"></a>
+            </div>
+          </div>
+        </section>
+    </main>
+    <!--Comienzo de Footer-->
+    <footer>
+      <div class="footer__centro">
+        <p class="footer__centro__texto1">Visítanos en Vecindario, en calle Sin Nombre 1234, donde nuestro equipo te
+          recibirá de la mejor manera</p>
+        <p class="footer__centro__texto2">También puedes comunicarte con nosotros vía whatsapp o telefónicamente al
+          0123-4567890</p>
       </div>
-      <section class="servicios">
-        <div class="servicio__piercing">
-          <h3>PIERCING</h3>
-          <div class="contenedor__piercing">
-            <a href="./images/piercing-1.jpg" target="_blank"><img src="./images/piercing-1.jpg" alt="Piercing 1"></a>
-            <a href="./images/piercing-2.jpg" target="_blank"><img src="./images/piercing-2.jpg" alt="Piercing 2"></a>
-            <a href="./images/piercing-3.jpg" target="_blank"><img src="./images/piercing-3.jpg" alt="Piercing 3"></a>
-          </div>
-        </div>
-        <div class="servicio__tattoo">
-          <h3>TATTOO</h3>
-          <div class="contenedor__tattoo">
-            <a href="./images/tattoo-1.jpg" target="_blank"><img src="./images/tattoo-1.jpg" alt="Tattoo 1"></a>
-            <a href="./images/tattoo-2.jpg" target="_blank"><img src="./images/tattoo-2.jpg" alt="Tattoo 2"></a>
-            <a href="./images/tattoo-3.jpg" target="_blank"><img src="./images/tattoo-3.jpg" alt="Tattoo 3"></a>
-          </div>
-        </div>
-      </section>
-  </main>
-  <!--Comienzo de Footer-->
-  <footer>
-    <div class="footer__centro">
-      <p class="footer__centro__texto1">Visítanos en Vecindario, en calle Sin Nombre 1234, donde nuestro equipo te
-        recibirá de la mejor manera</p>
-      <p class="footer__centro__texto2">También puedes comunicarte con nosotros vía whatsapp o telefónicamente al
-        0123-4567890</p>
-    </div>
-    <!--Texto final del Footer-->
-    <div>
-      <p class="footer__final">Holy Koi Tattoo | Islas Canarias, España | 2021 | Powered by Lucas Macias
-      </p>
-    </div>
-  </footer>
+      <!--Texto final del Footer-->
+      <div>
+        <p class="footer__final">Holy Koi Tattoo | Islas Canarias, España | 2021 | Powered by Lucas Macias
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

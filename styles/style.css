@@ -5,6 +5,7 @@ body {
 }
 
 /*Header*/
+/*
 .header__contenedor {
   display: grid;
   grid-gap: 20px;
@@ -13,24 +14,39 @@ body {
   grid-template-areas: 
   'header header header';
 }
+
 header {
   height: 100px;
 }
 .header__contenedor .header {
   grid-area: header;
 }
-.header__titulo {
-  float: left;
-  margin: 30px 10px;
-  color: #fff;
-}
+
+*/
 .header__logo {
-  position: relative;
   height: 100px;
   width: 100px;
-  float: left;
+  
 }
-/*Nav*/
+.header__titulo {
+  color: #fff;
+  font-weight: 300;
+}
+.nav__estilo {
+  list-style:none;
+  background-color: rgb(12, 12, 12) !important;
+  
+}
+.nav__estilo a {
+  color: rgb(255, 255, 255); 
+  font-weight: 700;
+  color: white !important;
+}
+.nav__estilo a:hover{
+  color: rgb(140, 175, 13) !important;
+}
+
+/*
 .menu {
   list-style:none;
   text-align:right;
@@ -62,7 +78,7 @@ ul {
   gap: 25px;
   margin-top: -10px;
   margin-right: 20px ;
-}
+}*/
 /*Imagen de fondo cortada*/
 .imagenfondo {
   height: 250px;
