@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navbar__h1 {
+  color: #fff;
+}
+
+.navbar__logo {
+  max-width: 10vh;
+  height: auto;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 700 !important;
+}
+
+.nav-link:hover {
+  color: #8caf0d !important;
+}
+
+.nav-link.active {
+  color: #8caf0d !important;
+}
+
+.main__titulo {
+  color: white;
+  text-align: center;
+}
+
+.main__column {
+  color: white;
+  text-align: center;
+}
+
+.main__img {
+  max-width: 15vh;
+  height: 15vh;
+  margin: 1em;
+}
+
+@media (min-width: 700px) {
+  .main__img {
+    max-width: 25vh;
+    height: 25vh;
+  }
+}
+
+.main__p {
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.main__images {
+  max-width: 25vh;
+  height: auto;
+  margin: 2em;
+}
+
+@media (min-width: 700px) {
+  .main__images {
+    max-width: 60vh;
+  }
+}
+
+.main__fondo {
+  background-image: url(../images/holy-b.jpg);
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.1;
+}
+
+footer h5 {
+  color: #8caf0d;
+}
+
+footer p {
+  font-size: 0.7em;
+}
+
+.footer__a {
+  font-weight: 700;
+  font-size: 0.9em;
+  color: white;
+}
+
+.footer__a:hover {
+  color: #8caf0d;
+}
+/*# sourceMappingURL=styles.css.map */
