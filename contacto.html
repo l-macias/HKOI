@@ -27,19 +27,90 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto" >
-                    <a class="nav-link active"  aria-current="page" href="./index.html">Inicio</a>
+                    <a class="nav-link" href="./index.html">Inicio</a>
                     <a class="nav-link" href="./estudio.html">Estudio</a>
                     <a class="nav-link" href="./artistas.html">Artistas</a>
                     <a class="nav-link" href="./servicios.html">Servicios</a>
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                    <a class="nav-link active" href="./contacto.html">Contacto</a>
                 </div>
             </div>
         </div>
         </nav>
     </header>
     <!-- Main -->
-
-
+<main>
+    <section class="container-fluid">
+            <div class="row">
+                <h2 class="main__titulo mt-3 mb-2">CONTACTA CON HOLY KOI</h2>
+            </div>
+    
+            <!--Formulario-->
+    <div class="formulario">
+        <div class="reservas">
+          <p>Desde el siguiente formulario podrás realizar tu consulta. <br>
+            Nosotros chequearemos la información recibida, y nos
+            comunicaremos telefónicamente para cerrar la operación.</p>
+        </div>
+        <!--Comienzo del formulario-->
+        <form class="form" action="">
+          <fieldset>
+            <div>
+            <legend>Datos Personales</legend>
+            </div>
+            <br>
+            <div>
+              <!--Datos personales-->
+              <label class="mb-1" for="nombreYApellido">Nombre y Apellido:</label>
+              <input type="text" id="nombreYApellido" name="nombreYApellido">
+            </div>
+            <div>
+              <label class="mb-1" for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div>
+              <label class="mb-1" for="telefono">Teléfono*:</label>
+              <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            
+          </fieldset>
+          <fieldset>
+            <!--Parte 2 de formulario-->
+            <div>
+              <legend class="mt-4">Datos de Servicio</legend>
+              <!--Botones de Radio-->
+              <div>
+                <label for="tattoo">Quiero consultar sobre Tattoo</label>
+                <input type="radio" id="tattoo" name="servicio" value="basica">
+              </div>
+              <div>
+                <label for="piercing">Quiero consultar sobre Piercing</label>
+                <input type="radio" id="piercing" name="servicio" value="premium">
+              </div>
+              <br>
+              <!--Desplegable-->
+              <div class="mb-2">
+                <label class="mb-2" for="talle">Comunicación preferida:</label>
+                <Select name="comunicacion" id="comunicacion">
+                  <option value="llamada">Llamada telefónica</option>
+                  <option value="whatsapp">Whatsapp</option>
+                  <option value="email">Correo Electrónico</option>
+                </Select>
+              </div>
+              
+              <!--Checkbox-->
+              <div class="acepto">
+                <label for="acepto">Acepto que me contacten usando los datos que he proporcionado.</label>
+                <input type="checkbox" id="acepto" name="acepto" value="yes" checked required>
+              </div>
+              <!--Botones de Borrar y Enviar-->
+              <div class="mt-4">
+                <input type="reset" value="Borrar Datos">
+                <input type="submit" value="Enviar datos">
+              </div>
+          </fieldset>
+        </form>
+    </div>
+    </section>
 </main>
 <!-- Footer -->
 <footer class="bg-dark text-white align-items-center" >
@@ -51,14 +122,14 @@
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-2">Servicios</h5>
-                    <a href="#" class="footer__a me-1">Tattoos
+                    <a href="./servicios.html#tattoos" class="footer__a me-1">Tattoos
                     </a>
-                    <a href="#" class="footer__a ms-1 mb-4">Piercings
+                    <a href="./servicios.html#piercings" class="footer__a ms-1 mb-4">Piercings
                     </a>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-2">Contacto</h5>
-                    <a href="./servicios.html" class="footer__a me-2 mb-4">Formulario de Consulta
+                    <a href="./contacto.html" class="footer__a me-2 mb-4">Formulario de Consulta
                     </a>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">

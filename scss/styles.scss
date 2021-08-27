@@ -1,26 +1,9 @@
-//Global
+//IMPORTS
 @import "variables";
 @import "globales";
+@import "components/header";
+@import "./components/footer";
 
-//Header
-.navbar__h1 {
-  color: #fff;
-}
-
-.navbar__logo {
-  max-width: 10vh;
-  height: auto;
-}
-.nav-link {
-  color: white !important;
-  font-weight: 700 !important;
-  &:hover {
-    color: $verde !important;
-  }
-  &.active {
-    color: $verde !important;
-  }
-}
 //Main
 .main__titulo {
   color: white;
@@ -130,20 +113,43 @@
   }
 }
 
-//Footer
-footer {
-  h5 {
-    color: $verde;
-  }
-  p {
-    font-size: 0.7em;
-  }
+//Contacto
+
+.formulario {
+  margin-top: 10px;
+  font-size: 12px;
 }
-.footer__a {
-  font-weight: 700;
-  font-size: 0.9em;
-  color: white;
-  &:hover {
-    color: $verde;
-  }
+legend {
+  color: #0c0f0cd8;
+  font-size: 28px;
+}
+.reservas {
+  text-align: center;
+  color: #fff;
+}
+form {
+  margin: 0 auto; /* Centrar el formulario en la página */
+  max-width: 50vh;
+  margin-bottom: 10px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 2px solid $verde;
+  border-radius: 1em;
+  text-align: center;
+  background-color: #ffffff;
+}
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 280px;
+  text-align: center;
+  color: #394141;
+}
+.acepto {
+  /*Etiqueta acepto que me contacten*/
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  font-family: Verdana;
+  font-size: 10px;
+  text-align: center;
 }

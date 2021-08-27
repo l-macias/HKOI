@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +36,24 @@ a {
 
 .nav-link.active {
   color: #8caf0d !important;
+}
+
+footer h5 {
+  color: #8caf0d;
+}
+
+footer p {
+  font-size: 0.7em;
+}
+
+.footer__a {
+  font-weight: 700;
+  font-size: 0.9em;
+  color: white;
+}
+
+.footer__a:hover {
+  color: #8caf0d;
 }
 
 .main__titulo {
@@ -173,21 +192,48 @@ a {
   border: solid 1px aqua;
 }
 
-footer h5 {
-  color: #8caf0d;
+.formulario {
+  margin-top: 10px;
+  font-size: 12px;
 }
 
-footer p {
-  font-size: 0.7em;
+legend {
+  color: #0c0f0cd8;
+  font-size: 28px;
 }
 
-.footer__a {
-  font-weight: 700;
-  font-size: 0.9em;
-  color: white;
+.reservas {
+  text-align: center;
+  color: #fff;
 }
 
-.footer__a:hover {
-  color: #8caf0d;
+form {
+  margin: 0 auto;
+  /* Centrar el formulario en la página */
+  max-width: 50vh;
+  margin-bottom: 10px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 2px solid #8caf0d;
+  border-radius: 1em;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 280px;
+  text-align: center;
+  color: #394141;
+}
+
+.acepto {
+  /*Etiqueta acepto que me contacten*/
+  color: black;
+  background-color: #ffffff;
+  font-family: Verdana;
+  font-size: 10px;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
