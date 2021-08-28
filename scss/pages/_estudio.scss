@@ -1,8 +1,8 @@
 //Estudio
-.main__estudio {
+.estudio {
   height: auto;
 }
-.main__estudio--p1 {
+.estudio__p1 {
   color: white;
   text-align: justify;
   border: solid $verde;
@@ -12,17 +12,12 @@
     max-width: 60vh;
   }
 }
-.main__estudio--p2 {
-  color: white;
-  text-align: justify;
+.estudio__p1--p2 {
+  @extend .estudio__p1;
   border: solid $celeste;
-  padding: 30px;
-  min-width: 30vh;
-  @media (min-width: 700px) {
-    max-width: 60vh;
-  }
+
 }
-.main__estudio--img {
+.estudio__img {
   width: 40vh;
   @media (min-width: 700px) {
     width: 60vh;

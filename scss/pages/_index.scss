@@ -1,20 +1,15 @@
 //Main
-.main__titulo {
-  color: white;
-  text-align: center;
-}
+
 .main__column {
   color: white;
   text-align: justify;
 }
 .main__img {
-  // max-width: 15vh;
   height: 15vh;
   margin: 1em;
 
   @media (min-width: 700px) {
-    max-width: 25vh;
-    height: 25vh;
+    @include mw-h (25vh,25vh);    
   }
 }
 .main__p {
@@ -23,8 +18,7 @@
   margin-right: 2em;
 }
 .main__images {
-  max-width: 25vh;
-  height: auto;
+  @include mw-h (45vh,auto);
   margin: 2em;
   @media (min-width: 700px) {
     max-width: 60vh;

@@ -1,0 +1,4 @@
+@mixin mw-h  ($mw, $h) {
+  max-width: $mw;
+  height: $h;
+}
