@@ -1,0 +1,40 @@
+//Contacto
+
+.formulario {
+  margin-top: 10px;
+  font-size: 12px;
+}
+legend {
+  color: #0c0f0cd8;
+  font-size: 28px;
+}
+.reservas {
+  text-align: center;
+  color: $verde;
+}
+form {
+  margin: 0 auto; /* Centrar el formulario en la página */
+  max-width: 50vh;
+  margin-bottom: 10px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 2px solid $verde;
+  border-radius: 1em;
+  text-align: center;
+  background-color: #ffffff;
+}
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 280px;
+  text-align: center;
+  color: #394141;
+}
+.acepto {
+  /*Etiqueta acepto que me contacten*/
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  font-family: Verdana;
+  font-size: 10px;
+  text-align: center;
+}

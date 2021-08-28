@@ -1,0 +1,31 @@
+//Estudio
+.main__estudio {
+  height: auto;
+}
+.main__estudio--p1 {
+  color: white;
+  text-align: justify;
+  border: solid $verde;
+  padding: 30px;
+  min-width: 30vh;
+  @media (min-width: 700px) {
+    max-width: 60vh;
+  }
+}
+.main__estudio--p2 {
+  color: white;
+  text-align: justify;
+  border: solid $celeste;
+  padding: 30px;
+  min-width: 30vh;
+  @media (min-width: 700px) {
+    max-width: 60vh;
+  }
+}
+.main__estudio--img {
+  width: 40vh;
+  @media (min-width: 700px) {
+    width: 60vh;
+    max-height: 60vh;
+  }
+}
