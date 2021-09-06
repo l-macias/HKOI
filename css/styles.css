@@ -67,12 +67,22 @@ footer p {
 }
 
 .main__img {
-  height: 15vh;
+  height: 25vh;
   margin: 1em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .main__img {
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main__img {
+    -webkit-animation-name: tribal;
+            animation-name: tribal;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
     max-width: 25vh;
     height: 25vh;
   }
@@ -93,6 +103,36 @@ footer p {
 @media (min-width: 700px) {
   .main__images {
     max-width: 60vh;
+  }
+}
+
+@-webkit-keyframes tribal {
+  0% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    margin: 100px;
+  }
+  50% {
+    margin: 50px;
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes tribal {
+  0% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    margin: 100px;
+  }
+  50% {
+    margin: 50px;
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
