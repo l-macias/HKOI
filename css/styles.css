@@ -19,6 +19,33 @@ a {
 .main__titulo {
   color: white;
   text-align: center;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  background: url(../images/barrarelleno.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: tituloanimado 60s linear infinite;
+          animation: tituloanimado 60s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes tituloanimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes tituloanimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .navbar__h1 {
