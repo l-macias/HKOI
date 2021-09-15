@@ -7,7 +7,9 @@
 }
 
 body {
-  background-color: #000;
+  background: #2e2e30;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2e2e30), color-stop(53%, black), to(#201e1e));
+  background: linear-gradient(180deg, #2e2e30 0%, black 53%, #201e1e 100%);
   font-family: "Raleway", sans-serif;
 }
 
