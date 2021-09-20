@@ -31,7 +31,7 @@
   <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid justify-content-end">
+      <div class="container-fluid justify-content-end justify-content-md-center">
         <div class="navbar__container d-flex flex-column justify-content-center flex-lg-row flex-lg align-items-center">
           <a class="navbar-brand" href="./index.html"><img src="./images/holy-logo.jpg" class="navbar__logo"
               alt="Logo Holy Koi"></a>
@@ -57,60 +57,77 @@
   <main>
     <section class="container-fluid">
       <div class="row">
-        <h2 class="main__titulo mt-3">CONTACTA CON HOLY KOI TATTOO</h2>
+        <h2 class="main__titulo mt-3 mb-2">CONTACTA CON HOLY KOI</h2>
+      </div>
+      <!--Formulario-->
+      <div class="formulario">
+        <div class="reservas">
+          <p>Desde el siguiente formulario podrás realizar tu consulta. <br>
+            Nosotros chequearemos la información recibida, y nos
+            comunicaremos telefónicamente para cerrar la operación.</p>
+        </div>
+        <!--Comienzo del formulario-->
+        <form class="form" action="">
+          <fieldset>
+            <div>
+              <legend>Datos Personales</legend>
+            </div>
+            <br>
+            <div>
+              <!--Datos personales-->
+              <label class="mb-1" for="nombreYApellido">Nombre y Apellido:</label>
+              <input type="text" id="nombreYApellido" name="nombreYApellido">
+            </div>
+            <div>
+              <label class="mb-1" for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div>
+              <label class="mb-1" for="telefono">Teléfono*:</label>
+              <input type="number" id="telefono" name="telefono" required>
+            </div>
+          </fieldset>
+          <fieldset>
+            <!--Parte 2 de formulario-->
+            <div>
+              <legend class="mt-4">Datos de Servicio</legend>
+              <!--Botones de Radio-->
+              <div>
+                <label for="tattoo">Quiero consultar sobre Tattoo</label>
+                <input type="radio" id="tattoo" name="servicio" value="basica">
+              </div>
+              <div>
+                <label for="piercing">Quiero consultar sobre Piercing</label>
+                <input type="radio" id="piercing" name="servicio" value="premium">
+              </div>
+              <br>
+              <!--Desplegable-->
+              <div class="mb-2">
+                <label class="mb-2" for="talle">Comunicación preferida:</label>
+                <Select name="comunicacion" id="comunicacion">
+                  <option value="llamada">Llamada telefónica</option>
+                  <option value="whatsapp">Whatsapp</option>
+                  <option value="email">Correo Electrónico</option>
+                </Select>
+              </div>
+              <!--Checkbox-->
+              <div class="acepto">
+                <label for="acepto">Acepto que me contacten usando los datos que he proporcionado.</label>
+                <input type="checkbox" id="acepto" name="acepto" value="yes" checked required>
+              </div>
+              <!--Botones de Borrar y Enviar-->
+              <div class="mt-4">
+                <input type="reset" value="Borrar Datos">
+                <input type="submit" value="Enviar datos">
+              </div>
+          </fieldset>
+        </form>
       </div>
     </section>
-    <form class="formulario">
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="nombre">Nombre:</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu Nombre">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="apellido">Apellido:</label>
-          <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu Apellido">
-        </div>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="email">*E-Mail:</label>
-        <input type="email" class="form-control" id="email" placeholder="Ingresa tu Correo Electrónico" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="telefono">*Teléfono:</label>
-        <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de Teléfono" required>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6 col-lg-3 mt-3 mb-3">
-          <label for="tattoo">Quiero consultar sobre Tattoo</label>
-          <input type="radio" id="tattoo" name="servicio">
-          <label for="piercing">Quiero consultar sobre Piercing</label>
-          <input type="radio" id="piercing" name="servicio">
-        </div>
-        <div class="form-group col-md-4">
-          <label for="comunicacion">Forma de comunicación:</label>
-          <select id="comunicacion" class="form-control">
-            <option selected>Seleccionar Vía</option>
-            <option value="llamada">Llamada telefónica</option>
-            <option value="whatsapp">Whatsapp</option>
-            <option value="email">Correo Electrónico</option>
-          </select>
-        </div>
-        <div class="form-group col-md-2 ">
-          <label class="acepto" for="acepto">Acepto que me contacten usando los datos que he proporcionado.</label>
-          <input type="checkbox" id="acepto" name="acepto" value="yes" checked required>
-        </div>
-      </div>
-      <button type="reset" class="btn btn-primary">Limpiar</button>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-
-
-
-
   </main>
   <!-- Footer -->
   <footer class="bg-dark text-white align-items-center">
-    <div class="container-fluid justify-content-end justify-content-md-center">
+    <div class="container-fluid text-center text-md-left">
       <div class="row text-center text-md-left ">
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
           <h4 class="text-uppercase mb-1">Holy Koi Tattoo</h4>
@@ -138,7 +155,6 @@
           </a>
         </div>
       </div>
-    </div>
   </footer>
   <!-- Scripts BOOTSTRAP (JS) y FontAwesome -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"

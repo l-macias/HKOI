@@ -267,47 +267,26 @@ footer p {
 }
 
 .formulario {
-  margin-top: 10px;
-  font-size: 12px;
-}
-
-legend {
-  color: #0c0f0cd8;
-  font-size: 28px;
-}
-
-.reservas {
-  text-align: center;
-  color: #ffffff;
-}
-
-form {
-  margin: 0 auto;
-  /* Centrar el formulario en la página */
-  max-width: 50vh;
-  margin-bottom: 10px;
-  /* Esquema del formulario */
-  padding: 1em;
-  border: 2px solid #8caf0d;
-  border-radius: 1em;
-  text-align: center;
-  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-right: 10vh;
+  margin-left: 10vh;
+  border-width: .2rem;
+  position: relative;
+  border: solid #8caf0d;
+  border-radius: 4px 4px 0 0;
+  color: white;
 }
 
 label {
   /* Tamaño y alineación uniforme */
-  display: inline-block;
-  width: 280px;
   text-align: center;
-  color: #394141;
+  color: white;
 }
 
 .acepto {
   /*Etiqueta acepto que me contacten*/
-  color: black;
-  background-color: #ffffff;
   font-family: Verdana;
-  font-size: 10px;
-  text-align: center;
+  font-size: 14px;
+  text-align: left;
 }
 /*# sourceMappingURL=styles.css.map */
