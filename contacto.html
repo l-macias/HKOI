@@ -60,53 +60,87 @@
         <h2 class="main__titulo mt-3">CONTACTA CON HOLY KOI TATTOO</h2>
       </div>
     </section>
-    <form class="formulario mb-3">
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="nombre">Nombre:</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu Nombre">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="apellido">Apellido:</label>
-          <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu Apellido">
+    <!-- Comienzo de Formulario -->
+    <form class="row g-3 needs-validation formulario mt-3" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="Ingresa tu Nombre" required>
+        <div class="valid-feedback">
+          Se ve genial!
         </div>
       </div>
-      <div class="form-group col-md-6">
-        <label for="email">*E-Mail:</label>
-        <input type="email" class="form-control" id="email" placeholder="Ingresa tu Correo Electrónico" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="telefono">*Teléfono:</label>
-        <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de Teléfono" required>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6 col-lg-3 mt-3 mb-3">
-          <label for="tattoo">Quiero consultar sobre Tattoo</label>
-          <input type="radio" id="tattoo" name="servicio">
-          <label for="piercing">Quiero consultar sobre Piercing</label>
-          <input type="radio" id="piercing" name="servicio">
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Apellido:</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Ingresa tu Apellido" required>
+        <div class="valid-feedback">
+          Entendido!
         </div>
-        <div class="form-group col-md-4">
-          <label for="comunicacion">Forma de comunicación:</label>
-          <select id="comunicacion" class="form-control">
-            <option selected>Seleccionar Vía</option>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomEmail" class="form-label">E-Mail</label>
+        <div class="input-group has-validation">
+          <input type="email" class="form-control" id="validationCustomEmail" aria-describedby="inputGroupPrepend"
+            placeholder="Ingresa un E-Mail" required>
+          <div class="invalid-feedback">
+            Por favor escribe una Dirección de Correo Electrónico Válida
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom03" class="form-label">Teléfono (10 dígitos)</label>
+        <input type="tel" class="form-control" id="validationCustom03" required pattern="[0-9]{10}"
+          placeholder="Ej: 1145557778">
+        <div class="invalid-feedback">
+          Ingresa un Número de teléfono móvil correcto.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom04" class="form-label">Ciudad:</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Ingresa tu Localidad" required>
+        <div class="valid-feedback">
+          Excelente ciudad!
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="form-check col-md-4">
+          <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck2">Quiero consultar sobre tattoo</label>
+        </div>
+        <div class="form-check col-md-4">
+          <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck3">Quiero consultar sobre Piercing</label>
+          <div class="invalid-feedback">Tienes que elegir uno de los 2.</div>
+        </div>
+
+        <div class="col-md-6 mt-3">
+          <label for="validationCustom05" class="form-label">Comunicación preferida:</label>
+          <select class="form-select" id="validationCustom05" required>
+            <option selected disabled value="">Seleccione una opción</option>
             <option value="llamada">Llamada telefónica</option>
             <option value="whatsapp">Whatsapp</option>
             <option value="email">Correo Electrónico</option>
           </select>
-        </div>
-        <div class="form-group col-md-2 ">
-          <label class="acepto" for="acepto">Acepto que me contacten usando los datos que he proporcionado.</label>
-          <input type="checkbox" id="acepto" name="acepto" value="yes" checked required>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
         </div>
       </div>
-      <button type="reset" class="btn btn-primary">Limpiar</button>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Acepto que se comuniquen conmigo por algún medio de los medios brindados
+          </label>
+          <div class="invalid-feedback">
+            Debes aceptar la comunicación para enviar tu consulta
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <button class="btn btn-primary formulario__btn" type="reset">Limpiar</button>
+        <button class="btn btn-primary formulario__btn" type="submit">Enviar</button>
+      </div>
     </form>
-
-
-
-
   </main>
   <!-- Footer -->
   <footer class="bg-dark text-white align-items-center">
@@ -148,6 +182,27 @@
     integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/df26557daa.js" crossorigin="anonymous"></script>
+  <!-- Script Validación Bootstrap -->
+  <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()</script>
 </body>
 
 </html>
